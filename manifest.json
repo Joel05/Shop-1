@@ -1,0 +1,10 @@
+{
+    "manifest_version" : 3,
+    "name": "cxcheck",
+    "description": "a automation script for formulars",
+    "version":"0.1",
+    "content_scripts":[{
+        "matches":["https://ilias-guests.fhv.at/*"],
+        "js":["main.js"]
+    }]
+}
