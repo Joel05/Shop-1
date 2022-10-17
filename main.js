@@ -1,11 +1,9 @@
 var title = document.getElementsByClassName("ilc_page_title_PageTitle")[0].outerText 
 var trig = false
 
+
 window.addEventListener("keydown",(e) =>{
     if (e.key == 'a'){
-
-        alert("obacht chef, stüti mach d auga zua")
-
         if(title == "Diff_1"){
             console.warn(title)
                 document.getElementById("answer_1").checked = false
@@ -190,6 +188,7 @@ window.addEventListener("keydown",(e) =>{
         }
         if(title=="ck(3)")
         {
+            document.getElementsByClassName("preventDoubleSubmission")[1].click()
             document.getElementsByClassName("preventDoubleSubmission")[10].click()
         }
         if(title=="inv Scha")
@@ -287,7 +286,7 @@ window.addEventListener("keydown",(e) =>{
 
             document.getElementById("answer_0").click()
         }
-        if(title=="Add und Sub (2)")
+        if(title=="Add und Sub (2)" && e.key == "w")
         {
             document.getElementById("answer_12").checked = false
             document.getElementById("answer_11").checked = false
@@ -343,7 +342,7 @@ window.addEventListener("keydown",(e) =>{
         }
         if(title=="inv Vst")
         {
-            document.getElementsByName("result_$r1")[0].value ="0" 
+            document.getElementsByName("result_$r1")[0].value ="0.011" 
         }
         if(title=="BodeDiffInt (2)")
         {
@@ -466,27 +465,100 @@ window.addEventListener("keydown",(e) =>{
         }
         if(title=="TransV 2")
         {
-            document.getElementsByName("result_$r1")[0].value = "0"
+            document.getElementsByName("result_$r1")[0].value = "423.1"
             setTimeout(function(){
-               document.getElementsByName("result_$r2")[0].value = "0"
+               document.getElementsByName("result_$r2")[0].value = "2555.6"
                setTimeout(function(){
-                document.getElementsByName("result_$r3")[0].value = "0"
+                document.getElementsByName("result_$r3")[0].value = "45700"
                 setTimeout(function(){
-                    document.getElementsByName("result_$r4")[0].value = "0"
+                    document.getElementsByName("result_$r4")[0].value = "2115.5"
                     setTimeout(function(){
-                        document.getElementsByName("result_$r5")[0].value = "0"
+                        document.getElementsByName("result_$r5")[0].value = "414.4"
                      },2000);
                  },2000);
              },2000);
             },2000);
         }
-        if(title=="Add und Sub (2)")
+        if(title=="Add und Sub (2)"&&e.key == 'q')
         {
             document.getElementById("answer_1").click()
         }
-    }
-    if (e.key == 's'){
-        alert("off")
+        if(title=="Schaltverluste_")
+        {
+            ocument.getElementById("answer_1").click()
+        }
+        if(title=="OPStab (2) (2)")
+        {
+            document.getElementById("answer_6").checked = false
+            document.getElementById("answer_5").checked = false
+            document.getElementById("answer_2").checked = false
+            document.getElementById("answer_3").checked = false
+
+            document.getElementById("answer_6").click()
+            document.getElementById("answer_5").click()
+            document.getElementById("answer_2").click()
+            document.getElementById("answer_3").click()
+        }
+        if(title=="Diff_4")
+        {
+            document.getElementsByName("result_$r1")[0].value = "-135"
+        }
+        if(title=="Diff_2")
+        {
+            document.getElementById("answer_3").click()
+        }
+        if(title=="OPunkomp")
+        {
+            document.getElementById("answer_3").checked = false
+            document.getElementById("answer_2").checked = false
+            document.getElementById("answer_5").checked = false
+            document.getElementById("answer_6").checked = false
+
+            document.getElementById("answer_3").click()
+            document.getElementById("answer_2").click()
+            document.getElementById("answer_5").click()
+            document.getElementById("answer_6").click()
+        }
+        if(title=="ImpWa")
+        {
+            document.getElementById("answer_3").checked = false
+            document.getElementById("answer_1").checked = false
+            document.getElementById("answer_8").checked = false
+            document.getElementById("answer_9").checked = false
+            document.getElementById("answer_6").checked = false
+            document.getElementById("answer_10").checked = false
+
+            document.getElementById("answer_3").click()
+            document.getElementById("answer_1").click()
+            document.getElementById("answer_8").click()
+            document.getElementById("answer_9").click()
+            document.getElementById("answer_6").click()
+            document.getElementById("answer_10").click()
+        }
+        if(title=="ni inv Scha")
+        {
+            document.getElementById("answer_11").checked = false
+            document.getElementById("answer_19").checked = false
+            document.getElementById("answer_12").checked = false
+            document.getElementById("answer_20").checked = false
+            document.getElementById("answer_14").checked = false
+            document.getElementById("answer_20").checked = false
+            document.getElementById("answer_14").checked = false
+            document.getElementById("answer_15").checked = false
+            document.getElementById("answer_9").checked = false
+            document.getElementById("answer_5").checked = false
+            document.getElementById("answer_16").checked = false
+
+            document.getElementById("answer_11").click()
+            document.getElementById("answer_19").click()
+            document.getElementById("answer_12").click()
+            document.getElementById("answer_20").click()
+            document.getElementById("answer_14").click()
+            document.getElementById("answer_15").click()
+            document.getElementById("answer_9").click()
+            document.getElementById("answer_5").click()
+            document.getElementById("answer_16").click()
+        }
     }
 });
 
