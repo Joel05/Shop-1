@@ -41,7 +41,7 @@ window.addEventListener("keydown",(e) =>{
 
         if(title == "DV Berechnung"){
             
-                console.warn("type")
+                
                 document.getElementsByName("result_$r1")[0].value = "0"
                 setTimeout(function(){
                    document.getElementsByName("result_$r2")[0].value = "40"
@@ -326,9 +326,164 @@ window.addEventListener("keydown",(e) =>{
             document.getElementById("answer_9").click()
             document.getElementById("answer_16").click()
             document.getElementById("answer_8").click()
-            document.getElementById("answer_1y7").click()
+            document.getElementById("answer_17").click()
         }
+        if(title=="FGKomp_ (2)")
+        {
+            document.getElementsByClassName("preventDoubleSubmission")[5].click()
+        }
+        if(title=="OPStab (2)")
+        {
+            document.getElementsByClassName("preventDoubleSubmission")[5].click()
+        }
+        if(title=="OPStab")
+        {
+            document.getElementsByClassName("preventDoubleSubmission")[2].click()
+            document.getElementsByClassName("preventDoubleSubmission")[6].click()
+        }
+        if(title=="inv Vst")
+        {
+            document.getElementsByName("result_$r1")[0].value ="0" 
+        }
+        if(title=="BodeDiffInt (2)")
+        {
+            document.getElementsByClassName("preventDoubleSubmission")[5].click()
+        }
+        if(title=="Integ_1")
+        {
+            document.getElementById("answer_5").checked = false
+            document.getElementById("answer_0").checked = false
+            document.getElementById("answer_6").checked = false
+            document.getElementById("answer_9").checked = false
+            document.getElementById("answer_1").checked = false
+            document.getElementById("answer_9").checked = false
+            document.getElementById("answer_7").checked = false
+            document.getElementById("answer_3").checked = false
 
+            document.getElementById("answer_5").click()
+            document.getElementById("answer_0").click()
+            document.getElementById("answer_6").click()
+            document.getElementById("answer_9").click()
+            document.getElementById("answer_1").click()
+            document.getElementById("answer_9").click()
+            document.getElementById("answer_7").click()
+            document.getElementById("answer_3").click()
+        }
+        if(title=="BodeDiffInt (3)")
+        {
+            document.getElementsByName("preventDoubleSubmission")[6].click()
+        }
+        if(title=="OPIquelle")
+        {
+            document.getElementById("answer_4").checked = false
+
+            document.getElementById("answer_4").click()
+        }
+        if(title=="ck(6) (2)")
+        {
+            document.getElementsByName("preventDoubleSubmission")[1].click()
+        }
+        if(title=="Integ2")
+        {
+            document.getElementById("answer_12").checked = false
+            document.getElementById("answer_5").checked = false
+            document.getElementById("answer_0").checked = false
+            document.getElementById("answer_15").checked = false
+            document.getElementById("answer_9").checked = false
+
+            document.getElementById("answer_12").click()
+            document.getElementById("answer_5").click()
+            document.getElementById("answer_0").click()
+            document.getElementById("answer_15").click()
+            document.getElementById("answer_9").click()
+        }
+        if(title=="StromQ")
+        {
+            
+                document.getElementsByName("result_$r1")[0].value = "0"
+                setTimeout(function(){
+                   document.getElementsByName("result_$r2")[0].value = "0"
+                },2000);
+        }
+        if(title=="ck(6)")
+        {
+            document.getElementsByName("preventDoubleSubmission")[4].click()
+            document.getElementsByName("preventDoubleSubmission")[10].click()
+        }
+        if(title=="FGang Korrektur")
+        {
+            document.getElementById("answer_2").checked = false
+            document.getElementById("answer_14").checked = false
+            document.getElementById("answer_5").checked = false
+            document.getElementById("answer_11").checked = false
+            document.getElementById("answer_4").checked = false
+            document.getElementById("answer_6").checked = false
+            document.getElementById("answer_8").checked = false
+
+            document.getElementById("answer_2").click()
+            document.getElementById("answer_14").click()
+            document.getElementById("answer_5").click()
+            document.getElementById("answer_11").click()
+            document.getElementById("answer_4").click()
+            document.getElementById("answer_6").click()
+            document.getElementById("answer_8").click()
+        }
+        if(title=="OP Aufbau")
+        {
+            document.getElementById("answer_3").checked = false
+            document.getElementById("answer_4").checked = false
+            document.getElementById("answer_5").checked = false
+            document.getElementById("answer_1").checked = false
+
+            document.getElementById("answer_3").click()
+            document.getElementById("answer_4").click()
+            document.getElementById("answer_5").click()
+            document.getElementById("answer_1").click()
+        }
+        if(title=="OPIquelle (2)")
+        {
+            document.getElementById("answer_5").checked = false
+
+            document.getElementById("answer_5").click()
+        }
+        if(title=="Schwingbedingung")
+        {
+            document.getElementById("answer_5").checked = false
+            document.getElementById("answer_1").checked = false
+            document.getElementById("answer_13").checked = false
+            document.getElementById("answer_6").checked = false
+            document.getElementById("answer_16").checked = false
+            document.getElementById("answer_10").checked = false
+            document.getElementById("answer_9").checked = false
+
+            document.getElementById("answer_5").click()
+            document.getElementById("answer_1").click()
+            document.getElementById("answer_13").click()
+            document.getElementById("answer_6").click()
+            document.getElementById("answer_16").click()
+            document.getElementById("answer_10").click()
+            document.getElementById("answer_9").click() 
+        }
+        if(title=="TransV 2")
+        {
+            document.getElementsByName("result_$r1")[0].value = "0"
+            setTimeout(function(){
+               document.getElementsByName("result_$r2")[0].value = "0"
+               setTimeout(function(){
+                document.getElementsByName("result_$r3")[0].value = "0"
+                setTimeout(function(){
+                    document.getElementsByName("result_$r4")[0].value = "0"
+                    setTimeout(function(){
+                        document.getElementsByName("result_$r5")[0].value = "0"
+                     },2000);
+                 },2000);
+             },2000);
+            },2000);
+        }
+        if(title=="Add und Sub (2)")
+        {
+            document.getElementById("answer_1").click()
+        }
     }
     if (e.key == 's'){
         alert("off")
