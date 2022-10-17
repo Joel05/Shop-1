@@ -233,7 +233,7 @@ window.addEventListener("keydown",(e) =>{
             document.getElementById("answer_2").checked = false
             document.getElementById("answer_10").checked = false
             document.getElementById("answer_1").checked = false
-
+            document.getElementsByClassName("preventDoubleSubmission")[6].click()
             document.getElementById("answer_4").click()
             document.getElementById("answer_0").click()
             document.getElementById("answer_2").click()
@@ -247,7 +247,7 @@ window.addEventListener("keydown",(e) =>{
         }
         if(title=="Diff_3")
         {
-            document.getElementsByName("result_$r1")[0].value ="0"
+            document.getElementsByName("result_$r1")[0].value ="-100"
         }
         if(title=="OPStab")
         {
@@ -370,7 +370,7 @@ window.addEventListener("keydown",(e) =>{
         }
         if(title=="BodeDiffInt (3)")
         {
-            document.getElementsByName("preventDoubleSubmission")[6].click()
+            document.getElementsByClassName("preventDoubleSubmission")[6].click()
         }
         if(title=="OPIquelle")
         {
@@ -399,15 +399,16 @@ window.addEventListener("keydown",(e) =>{
         if(title=="StromQ")
         {
             
-                document.getElementsByName("result_$r1")[0].value = "0"
+                document.getElementsByClassName("result_$r1")[0].value = "5687.5"
                 setTimeout(function(){
-                   document.getElementsByName("result_$r2")[0].value = "0"
+                   document.getElementsByClassName("result_$r2")[0].value = "28.6"
                 },2000);
         }
         if(title=="ck(6)")
         {
-            document.getElementsByName("preventDoubleSubmission")[4].click()
-            document.getElementsByName("preventDoubleSubmission")[10].click()
+            document.getElementsByClassName("preventDoubleSubmission")[6].click()
+            document.getElementsByClassName("preventDoubleSubmission")[2].click()
+            document.getElementsByClassName("preventDoubleSubmission")[8].click()
         }
         if(title=="FGang Korrektur")
         {
@@ -489,15 +490,7 @@ window.addEventListener("keydown",(e) =>{
         }
         if(title=="OPStab (2) (2)")
         {
-            document.getElementById("answer_6").checked = false
-            document.getElementById("answer_5").checked = false
-            document.getElementById("answer_2").checked = false
-            document.getElementById("answer_3").checked = false
-
-            document.getElementById("answer_6").click()
-            document.getElementById("answer_5").click()
-            document.getElementById("answer_2").click()
-            document.getElementById("answer_3").click()
+            document.getElementsByClassName("preventDoubleSubmission")[7].click()
         }
         if(title=="Diff_4")
         {
