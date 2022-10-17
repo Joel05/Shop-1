@@ -233,7 +233,7 @@ window.addEventListener("keydown",(e) =>{
             document.getElementById("answer_2").checked = false
             document.getElementById("answer_10").checked = false
             document.getElementById("answer_1").checked = false
-            document.getElementsByClassName("preventDoubleSubmission")[6].click()
+
             document.getElementById("answer_4").click()
             document.getElementById("answer_0").click()
             document.getElementById("answer_2").click()
@@ -399,9 +399,9 @@ window.addEventListener("keydown",(e) =>{
         if(title=="StromQ")
         {
             
-                document.getElementsByClassName("result_$r1")[0].value = "5687.5"
+                document.getElementsByName("result_$r1")[0].value = "5687.5"
                 setTimeout(function(){
-                   document.getElementsByClassName("result_$r2")[0].value = "28.6"
+                   document.getElementsByName("result_$r2")[0].value = "28.6"
                 },2000);
         }
         if(title=="ck(6)")
