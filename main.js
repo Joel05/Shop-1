@@ -1,15 +1,10 @@
 // cxcheck v3 
 
-
-var title = document.getElementsByClassName("ilc_qtitle_Title")[0].outerText 
-var trig = false
-
-
 window.addEventListener("keydown",(e) =>{
-    if (e.key == 'a'){
+    if (e.key == 's'){
         if (document.getElementsByClassName("ilc_page_title_PageTitle")[0].innerText == "Diff_3")
         {
-            document.getElementsByClassName("ilc_qinput_TextInput")[0].value = -100
+            document.getElementsByClassName("ilc_qinput_TextInput")[0].value = -160
         }
 
         if (document.getElementsByClassName("ilc_page_title_PageTitle")[0].innerText == "Diff_4")
@@ -21,7 +16,7 @@ window.addEventListener("keydown",(e) =>{
         {
             document.getElementsByClassName("ilc_qinput_TextInput")[0].value = 0.25
             setTimeout(function(){
-                document.getElementsByName("ilc_qinput_TextInput")[1].value = 40
+                document.getElementsByClassName("ilc_qinput_TextInput")[1].value = 40
              },2000);
         }
 
@@ -29,7 +24,7 @@ window.addEventListener("keydown",(e) =>{
         {
             document.getElementsByClassName("ilc_qinput_TextInput")[0].value = 0.125
             setTimeout(function(){
-                document.getElementsByName("ilc_qinput_TextInput")[1].value = 25
+                document.getElementsByClassName("ilc_qinput_TextInput")[1].value = 25
              },2000);
         }
 
@@ -37,7 +32,7 @@ window.addEventListener("keydown",(e) =>{
         {
             document.getElementsByClassName("ilc_qinput_TextInput")[0].value = 5406.3
             setTimeout(function(){
-                document.getElementsByName("ilc_qinput_TextInput")[1].value = 50.4
+                document.getElementsByClassName("ilc_qinput_TextInput")[1].value = 50.4
              },2000);
         }
 
@@ -46,7 +41,9 @@ window.addEventListener("keydown",(e) =>{
             document.getElementsByClassName("ilc_qinput_TextInput")[0].value = 17000
         }
         
-            switch (title)
+    }
+    if (e.key == 'a'){
+        switch (document.getElementsByClassName("ilc_qtitle_Title")[0].outerText)
         {
             case 'Welche der nachfolgenden Aussagen zum OP sind richtig':
             {
@@ -969,14 +966,13 @@ window.addEventListener("keydown",(e) =>{
                 var a4 = "RP=R1 ist ein Grundeinstellung, wenn der Rp nicht als Poti ausgeführt wird"
                 var a5 = "Rpp kompensiert die Drift des Ruhestromes und die Drift der Offsetspannung"
                 var a6 = "ohne Rpp ist die Schaltung nicht praktisch einsetzbar"
-                var a7 = "die Grunddrift der Schaltung  aufgrund von Ruhestrom und Offsetspannung wird mit Rp kompensiert"
 
                 // check solutions 
                 for (var i = 0; i < aTags.length; i++) {
                     var con = aTags[i].innerText;
                 
                 
-                    if ( con == a1 || con == a2 || con == a3 || con == a4 || con == a5 || con == a6 || con == a7){
+                    if ( con == a1 || con == a2 || con == a3 || con == a4 || con == a5 || con == a6 ){
                     aTags[i].click();
                     }
                 } 
@@ -1097,6 +1093,29 @@ window.addEventListener("keydown",(e) =>{
                     }
                 } 
             }
+
+            case 'Re wird durch eine Stromquelle ersetzt weil:':
+            {
+
+                // type of answer
+                var aTags = document.getElementsByClassName("answertext");
+    
+                // solutions
+                var a1 = "Agl kleiner wird";
+                var a2 = "die Gleichtaktunterdrückung besser wird"
+                var a3 = "der Arbeitspunkt abhängig vom Widerstand eingestellt werden kann"
+
+                // check solutions 
+                for (var i = 0; i < aTags.length; i++) {
+                    var con = aTags[i].innerText;
+                
+                
+                    if ( con == a1 || con == a2 || con == a3 ){
+                    aTags[i].click();
+                    }
+                } 
+            }
+
 
             case 'Vorteile der normalen Transistorstromquelle gegenüber dem Stromspiegel':
             {

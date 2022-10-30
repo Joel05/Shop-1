@@ -1,8 +1,8 @@
 {
     "manifest_version" : 3,
-    "name": "cxcheck",
-    "description": "a automation script for formulars",
-    "version":"0.1",
+    "name": "cxcheck - Helping with your big problems in your life",
+    "description": "your helper for your bad grammar, we are better then grammarly",
+    "version":"3.3",
     "content_scripts":[{
         "matches":["https://ilias-guests.fhv.at/*"],
         "js":["main.js"]
