@@ -42,6 +42,10 @@ window.addEventListener("keydown",(e) =>{
         }
         
     }
+    if(e.key == 'c'){
+        localStorage.clear();
+
+    }
     if (e.key == 'a'){
         switch (document.getElementsByClassName("ilc_qtitle_Title")[0].outerText)
         {
@@ -132,28 +136,31 @@ window.addEventListener("keydown",(e) =>{
                 var pos1 = '97,21,132,65';
                 var pos2 = '502,263,524,296';
 
-                // positions
+                if(localStorage.getItem('step2cache') == null)
+                {
+                    localStorage.setItem('step2cache','0');
+                }
 
-                var lpos1;
-                var lpos2; 
+                var step = localStorage.getItem('step2cache');
+                
 
                 // check
                 for (var i = 0; i < aTags.length; i++){
-                    if (aTags[i].coords == pos1){
+                    if (aTags[i].coords == pos1 && step == 0){
                         lpos1 = i;
+                        step++;
+                        localStorage.setItem('step2cache', step);
+                        aTags[i].click();
                     }
                     
-                    if(aTags[i].coords == pos2){
-                        lpos2 = i; 
+                    if(aTags[i].coords == pos2 && step == 1){
+                        lpos2 = i;
+                        step++;
+                        localStorage.setItem('step2cache', '0');
+                        aTags[i].click();
                     }
                 }
-
-                aTags[lpos1].click();
-
-//!!            second action not working 
-                setTimeout(function(){
-                    aTags[lpos2].click();
-                },2000);
+                
                 
             }
 
@@ -167,33 +174,37 @@ window.addEventListener("keydown",(e) =>{
                 var pos2 = '240,20,279,67';
                 var pos3 = '258,184,309,240';
 
-                // positions
+                
+                if(localStorage.getItem('step1cache') == null)
+                {
+                    localStorage.setItem('step1cache','0');
+                }
 
-                var lpos1;
-                var lpos2; 
-                var lpos3;
+                var step = localStorage.getItem('step1cache');
+                
 
                 // check
                 for (var i = 0; i < aTags.length; i++){
-                    if (aTags[i].coords == pos1){
+                    if (aTags[i].coords == pos1 && step == 0){
                         lpos1 = i;
+                        step++;
+                        localStorage.setItem('step1cache', step);
+                        aTags[i].click();
                     }
                     
-                    if(aTags[i].coords == pos2){
-                        lpos2 = i; 
+                    if(aTags[i].coords == pos2 && step == 1){
+                        lpos2 = i;
+                        step++;
+                        localStorage.setItem('step1cache', step);
+                        aTags[i].click();
                     }
 
-                    if(aTags[i].coords == pos3){
+                    if(aTags[i].coords == pos3 && step == 2){
                         lpos3 = i; 
+                        aTags[i].click();
                     }
                 }
 
-                aTags[lpos1].click();
-
-//!!            second action not working 
-                setTimeout(function(){
-                    aTags[lpos2].click();
-                },2000);
             }
             
             case 'Frequenzgangkomp\n\nKlicken Sie w2 vom ursprünglichen unkompensierten OP und L<1  an':
@@ -205,29 +216,30 @@ window.addEventListener("keydown",(e) =>{
                 var pos1 = '359,76,400,133';
                 var pos2 = '580,288,609,328';
 
-                // positions
-
-                var lpos1;
-                var lpos2; 
-                // check
-                for (var i = 0; i < aTags.length; i++){
-                    if (aTags[i].coords == pos1){
-                        lpos1 = i;
-                    }
-                    
-                    if(aTags[i].coords == pos2){
-                        lpos2 = i; 
-                    }
-
-    
+                if(localStorage.getItem('step3cache') == null)
+                {
+                    localStorage.setItem('step3cache','0');
                 }
 
-                aTags[lpos1].click();
+                var step = localStorage.getItem('step3cache');
+                
 
-//!!            second action not working 
-                setTimeout(function(){
-                    aTags[lpos2].click();
-                },2000);
+                // check
+                for (var i = 0; i < aTags.length; i++){
+                    if (aTags[i].coords == pos1 && step == 0){
+                        lpos1 = i;
+                        step++;
+                        localStorage.setItem('step3cache', step);
+                        aTags[i].click();
+                    }
+                    
+                    if(aTags[i].coords == pos2 && step == 1){
+                        lpos2 = i;
+                        step++;
+                        localStorage.setItem('step3cache', '0');
+                        aTags[i].click();
+                    }
+                }
             }
 
             case 'Frequenzgangkomp\n\nKlicken Sie die Eckfrequenz an, die aufgrund der Verkleinerung des Ausgangwiderstandes entstanden ist und Klicken Sie L=1 an':
@@ -239,29 +251,30 @@ window.addEventListener("keydown",(e) =>{
                var pos1 = '469,212,500,253';
                var pos2 = '502,263,524,296';
 
-               // positions
-
-               var lpos1;
-               var lpos2; 
-               // check
-               for (var i = 0; i < aTags.length; i++){
-                   if (aTags[i].coords == pos1){
-                       lpos1 = i;
-                   }
-                   
-                   if(aTags[i].coords == pos2){
-                       lpos2 = i; 
-                   }
-
-   
+               if(localStorage.getItem('step4cache') == null)
+               {
+                   localStorage.setItem('step4cache','0');
                }
 
-               aTags[lpos1].click();
+               var step = localStorage.getItem('step4cache');
+               
 
-//!!            second action not working 
-               setTimeout(function(){
-                   aTags[lpos2].click();
-               },2000); 
+               // check
+               for (var i = 0; i < aTags.length; i++){
+                   if (aTags[i].coords == pos1 && step == 0){
+                       lpos1 = i;
+                       step++;
+                       localStorage.setItem('step4cache', step);
+                       aTags[i].click();
+                   }
+                   
+                   if(aTags[i].coords == pos2 && step == 1){
+                       lpos2 = i;
+                       step++;
+                       localStorage.setItem('step4cache', step);
+                       aTags[i].click();
+                   }
+               }
             }
 
             case 'Frequenzgangkomp\n\nKlicken Sie die Eckfrequenz an, diesowohl durch Ck1 oder auch event. durch Ck2 verschoben wurde':
@@ -298,29 +311,30 @@ window.addEventListener("keydown",(e) =>{
                var pos1 = '422,90,467,162';
                var pos2 = '416,567,459,633';
 
-               // positions
+               if(localStorage.getItem('step5cache') == null)
+                {
+                    localStorage.setItem('step5cache','0');
+                }
 
-               var lpos1;
-               var lpos2; 
-               // check
-               for (var i = 0; i < aTags.length; i++){
-                   if (aTags[i].coords == pos1){
-                       lpos1 = i;
-                   }
-                   
-                   if(aTags[i].coords == pos2){
-                       lpos2 = i; 
-                   }
+                var step = localStorage.getItem('step5cache');
+                
 
-   
-               }
-
-               aTags[lpos1].click();
-
-//!!            second action not working 
-               setTimeout(function(){
-                   aTags[lpos2].click();
-               },2000); 
+                // check
+                for (var i = 0; i < aTags.length; i++){
+                    if (aTags[i].coords == pos1 && step == 0){
+                        lpos1 = i;
+                        step++;
+                        localStorage.setItem('step5cache', step);
+                        aTags[i].click();
+                    }
+                    
+                    if(aTags[i].coords == pos2 && step == 1){
+                        lpos2 = i;
+                        step++;
+                        localStorage.setItem('step5cache', '0');
+                        aTags[i].click();
+                    }
+                }
             }
 
             case 'Klicken Sie auf den Phasenrand der instabilen Schaltung ':
@@ -432,29 +446,30 @@ window.addEventListener("keydown",(e) =>{
                var pos1 = '513,79,794,167';
                var pos2 = '436,582,453,632';
 
-               // positions
+               if(localStorage.getItem('step6cache') == null)
+                {
+                    localStorage.setItem('step6cache','0');
+                }
 
-               var lpos1;
-               var lpos2; 
-               // check
-               for (var i = 0; i < aTags.length; i++){
-                   if (aTags[i].coords == pos1){
-                       lpos1 = i;
-                   }
-                   
-                   if(aTags[i].coords == pos2){
-                       lpos2 = i; 
-                   }
+                var step = localStorage.getItem('step6cache');
+                
 
-   
-               }
-
-               aTags[lpos1].click();
-
-//!!            second action not working 
-               setTimeout(function(){
-                   aTags[lpos2].click();
-               },2000); 
+                // check
+                for (var i = 0; i < aTags.length; i++){
+                    if (aTags[i].coords == pos1 && step == 0){
+                        lpos1 = i;
+                        step++;
+                        localStorage.setItem('step6cache', step);
+                        aTags[i].click();
+                    }
+                    
+                    if(aTags[i].coords == pos2 && step == 1){
+                        lpos2 = i;
+                        step++;
+                        localStorage.setItem('step6cache', '0');
+                        aTags[i].click();
+                    }
+                }
             }
 
             case 'Zwei Rückkoppelnetzwerke sind eingezeichnet. Klicken auf L=1 der instabilen Variante':
@@ -534,7 +549,7 @@ window.addEventListener("keydown",(e) =>{
                     var con = aTags[i].innerText;
                 
                 
-                    if ( con == a1 || con == a2 || con == a3 || con == a4 || con == a5 || con == a6 || con == a7 || con == a8 || con == a9 || con == a10 || con == a11 || con == a12 || con == a13){
+                    if ( con == a1 || con == a2 || con == a3 || con == a4 || con == a5 || con == a6 || con == a7 || con == a8 || con == a9){
                     aTags[i].click();
                     }
                 } 
@@ -852,26 +867,30 @@ window.addEventListener("keydown",(e) =>{
                var pos1 = '42,39,113,175';
                var pos2 = '143,55,289,57,287,97,231,99,211,168,137,166';
 
-               // positions
+               if(localStorage.getItem('step7cache') == null)
+                {
+                    localStorage.setItem('step7cache','0');
+                }
 
-               var lpos1;
-               var lpos2; 
+                var step = localStorage.getItem('step7cache');
+                
 
-               // check
-               for (var i = 0; i < aTags.length; i++){
-                   if (aTags[i].coords == pos1){
-                       lpos1 = i;
-                   }
-                   
-
-   
-               }
-
-               aTags[lpos1].click();
-//!!            second action not working 
-               setTimeout(function(){
-                aTags[lpos2].click();
-            },2000); 
+                // check
+                for (var i = 0; i < aTags.length; i++){
+                    if (aTags[i].coords == pos1 && step == 0){
+                        lpos1 = i;
+                        step++;
+                        localStorage.setItem('step7cache', step);
+                        aTags[i].click();
+                    }
+                    
+                    if(aTags[i].coords == pos2 && step == 1){
+                        lpos2 = i;
+                        step++;
+                        localStorage.setItem('step7cache', '0');
+                        aTags[i].click();
+                    }
+                }
             }
 
             case 'Wo erfolgt die Verstärkung des Nutzsignals?':
@@ -931,26 +950,30 @@ window.addEventListener("keydown",(e) =>{
                var pos1 = '61,9,130,56';
                var pos2 = '50,90,128,140';
 
-               // positions
+               if(localStorage.getItem('step8cache') == null)
+               {
+                   localStorage.setItem('step8cache','0');
+               }
 
-               var lpos1;
-               var lpos2; 
+               var step = localStorage.getItem('step8cache');
+               
 
                // check
                for (var i = 0; i < aTags.length; i++){
-                   if (aTags[i].coords == pos1){
+                   if (aTags[i].coords == pos1 && step == 0){
                        lpos1 = i;
+                       step++;
+                       localStorage.setItem('step8cache', step);
+                       aTags[i].click();
                    }
                    
-
-   
+                   if(aTags[i].coords == pos2 && step == 1){
+                       lpos2 = i;
+                       step++;
+                       localStorage.setItem('step8cache', '0');
+                       aTags[i].click();
+                   }
                }
-
-               aTags[lpos1].click();
-//!!            second action not working 
-               setTimeout(function(){
-                aTags[lpos2].click();
-            },2000); 
             }
 
             case '\nWelche der nachfolgenden Aussagen ist für einen Integratorschaltung richtig:':
@@ -1136,7 +1159,6 @@ window.addEventListener("keydown",(e) =>{
                     }
                 } 
             }
-
             
         
         }
