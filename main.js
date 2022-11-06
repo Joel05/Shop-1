@@ -145,7 +145,7 @@ window.addEventListener("keydown",(e) =>{
                 
 
                 // check
-                for (var i = 0; i < aTags.length; i++){
+                for (var i = 0; i < 99999999; i++){
                     if (aTags[i].coords == pos1 && step == 0){
                         lpos1 = i;
                         step++;
@@ -156,7 +156,7 @@ window.addEventListener("keydown",(e) =>{
                     if(aTags[i].coords == pos2 && step == 1){
                         lpos2 = i;
                         step++;
-                        localStorage.setItem('step2cache', '0');
+                        
                         aTags[i].click();
                     }
                 }
@@ -184,7 +184,7 @@ window.addEventListener("keydown",(e) =>{
                 
 
                 // check
-                for (var i = 0; i < aTags.length; i++){
+                for (var i = 0; i < 99999999; i++){
                     if (aTags[i].coords == pos1 && step == 0){
                         lpos1 = i;
                         step++;
@@ -225,7 +225,7 @@ window.addEventListener("keydown",(e) =>{
                 
 
                 // check
-                for (var i = 0; i < aTags.length; i++){
+                for (var i = 0; i < 99999999; i++){
                     if (aTags[i].coords == pos1 && step == 0){
                         lpos1 = i;
                         step++;
@@ -236,7 +236,6 @@ window.addEventListener("keydown",(e) =>{
                     if(aTags[i].coords == pos2 && step == 1){
                         lpos2 = i;
                         step++;
-                        localStorage.setItem('step3cache', '0');
                         aTags[i].click();
                     }
                 }
@@ -260,7 +259,7 @@ window.addEventListener("keydown",(e) =>{
                
 
                // check
-               for (var i = 0; i < aTags.length; i++){
+               for (var i = 0; i < 99999999; i++){
                    if (aTags[i].coords == pos1 && step == 0){
                        lpos1 = i;
                        step++;
@@ -271,7 +270,6 @@ window.addEventListener("keydown",(e) =>{
                    if(aTags[i].coords == pos2 && step == 1){
                        lpos2 = i;
                        step++;
-                       localStorage.setItem('step4cache', step);
                        aTags[i].click();
                    }
                }
@@ -320,7 +318,7 @@ window.addEventListener("keydown",(e) =>{
                 
 
                 // check
-                for (var i = 0; i < aTags.length; i++){
+                for (var i = 0; i < 99999999; i++){
                     if (aTags[i].coords == pos1 && step == 0){
                         lpos1 = i;
                         step++;
@@ -331,7 +329,6 @@ window.addEventListener("keydown",(e) =>{
                     if(aTags[i].coords == pos2 && step == 1){
                         lpos2 = i;
                         step++;
-                        localStorage.setItem('step5cache', '0');
                         aTags[i].click();
                     }
                 }
@@ -455,7 +452,7 @@ window.addEventListener("keydown",(e) =>{
                 
 
                 // check
-                for (var i = 0; i < aTags.length; i++){
+                for (var i = 0; i < 99999999; i++){
                     if (aTags[i].coords == pos1 && step == 0){
                         lpos1 = i;
                         step++;
@@ -466,7 +463,6 @@ window.addEventListener("keydown",(e) =>{
                     if(aTags[i].coords == pos2 && step == 1){
                         lpos2 = i;
                         step++;
-                        localStorage.setItem('step6cache', '0');
                         aTags[i].click();
                     }
                 }
@@ -684,14 +680,14 @@ window.addEventListener("keydown",(e) =>{
                // check
                for (var i = 0; i < aTags.length; i++){
                    if (aTags[i].coords == pos1){
-                       lpos1 = i;
+                       aTags[i].click();
                    }
                    
 
    
                }
 
-               aTags[lpos1].click();
+               
             }
 
             case 'Wo ist die durch den Stabilisierungswiderstand erzeugt Eckfreckuenz?':
@@ -708,14 +704,12 @@ window.addEventListener("keydown",(e) =>{
                // check
                for (var i = 0; i < aTags.length; i++){
                    if (aTags[i].coords == pos1){
-                       lpos1 = i;
+                    aTags[i].click();
                    }
                    
 
    
                }
-
-               aTags[lpos1].click();
             }
 
             case 'Wie gross ist der Phasenrand bei nachfolgendem Beispiel?':
@@ -753,14 +747,12 @@ window.addEventListener("keydown",(e) =>{
                // check
                for (var i = 0; i < aTags.length; i++){
                    if (aTags[i].coords == pos1){
-                       lpos1 = i;
+                    aTags[i].click();
                    }
                    
 
    
                }
-
-               aTags[lpos1].click();
             }
 
             case 'An welcher Stelle wird ist die für die Stabilität kritische Phase zu finden?':
@@ -777,14 +769,12 @@ window.addEventListener("keydown",(e) =>{
                // check
                for (var i = 0; i < aTags.length; i++){
                    if (aTags[i].coords == pos1){
-                       lpos1 = i;
+                    aTags[i].click();
                    }
                    
 
    
                }
-
-               aTags[lpos1].click();
             }
 
             case 'An welcher Stelle befindet sich die die Differantiatorwirkung bestimmende Frequenz?':
@@ -801,14 +791,13 @@ window.addEventListener("keydown",(e) =>{
                // check
                for (var i = 0; i < aTags.length; i++){
                    if (aTags[i].coords == pos1){
-                       lpos1 = i;
+                    aTags[i].click();
                    }
                    
 
    
                }
 
-               aTags[lpos1].click();
             }
 
             case 'Leiten Sie K her-\nWelche der nachfolgenden Aussagen ist richtig:':
@@ -876,7 +865,7 @@ window.addEventListener("keydown",(e) =>{
                 
 
                 // check
-                for (var i = 0; i < aTags.length; i++){
+                for (var i = 0; i < 99999999; i++){
                     if (aTags[i].coords == pos1 && step == 0){
                         lpos1 = i;
                         step++;
@@ -887,7 +876,6 @@ window.addEventListener("keydown",(e) =>{
                     if(aTags[i].coords == pos2 && step == 1){
                         lpos2 = i;
                         step++;
-                        localStorage.setItem('step7cache', '0');
                         aTags[i].click();
                     }
                 }
@@ -907,14 +895,12 @@ window.addEventListener("keydown",(e) =>{
                // check
                for (var i = 0; i < aTags.length; i++){
                    if (aTags[i].coords == pos1){
-                       lpos1 = i;
+                    aTags[i].click();
                    }
                    
 
    
                }
-
-               aTags[lpos1].click();
             }
 
             case 'Wo stellt sich Ugl ein?':
@@ -931,14 +917,12 @@ window.addEventListener("keydown",(e) =>{
                // check
                for (var i = 0; i < aTags.length; i++){
                    if (aTags[i].coords == pos1){
-                       lpos1 = i;
+                    aTags[i].click();
                    }
                    
 
    
                }
-
-               aTags[lpos1].click();
             }
             
             case 'Auf welchen Drähten erfolgt die so wichtige Impedanzwandlung?':
@@ -959,7 +943,7 @@ window.addEventListener("keydown",(e) =>{
                
 
                // check
-               for (var i = 0; i < aTags.length; i++){
+               for (var i = 0; i < 99999999; i++){
                    if (aTags[i].coords == pos1 && step == 0){
                        lpos1 = i;
                        step++;
@@ -969,8 +953,6 @@ window.addEventListener("keydown",(e) =>{
                    
                    if(aTags[i].coords == pos2 && step == 1){
                        lpos2 = i;
-                       step++;
-                       localStorage.setItem('step8cache', '0');
                        aTags[i].click();
                    }
                }
